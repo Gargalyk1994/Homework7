@@ -16,15 +16,6 @@ double[,] array = GetArray(rows, columns, 0.5, 11.8);
 PrintArray(array);
 WriteLine();
 
-// Write($"Сумма чисел главной диагонали: {FindSumDiagonalNum(array)}");
-// Write($"Сумма чисел главной диагонали: {GetSum(array)}");
-
-//array = FindArrayUnevenNum(array);
-//PrintArray(array);
-//WriteLine();
-
-//PrintArray(FindArrayUnevenNum(array));
-
 double[,] GetArray(int m, int n, double minValue, double maxValue)
 {
     double[,] result = new double[m, n];
@@ -50,32 +41,5 @@ void PrintArray(double[,] inArray)
     }
 }
 
-// int FindSumDiagonalNum (int[,] array)
-// {
-//     int[,] res = new int [array.GetLength(0), array.GetLength(1)];
-//     int sum = 0;
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             if (i == j) 
-//             {
-//                 sum += array[i, j];           
-//             }    
-//                 else res[i, j] = array[i, j]; 
-//         }
-//     }
-//     return sum;
-// }
-// //или замена Функции FindSumDiagonalNum -> функция GetSum
-// int GetSum(int[,] array)
-// {
-//     int length = array.GetLength(0) < array.GetLength(1) ? array.GetLength(0) : array.GetLength(0); // если array.GetLength(0) < array.GetLength(1) то в результат запишем array.GetLength(0) иначе array.GetLength(1)
-//     int sum = 0;
-//     for (int i = 0; i < length; i++)
-//     {
-//         sum += array[i, i]; 
-//     }
-//     return sum;
-// }
+
 
